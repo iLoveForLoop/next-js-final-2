@@ -30,7 +30,7 @@ export default function Home() {
       <header className="bg-blue-900/80 backdrop-blur-md border-b border-blue-500/30 p-4 flex justify-between items-center">
         <div className="flex items-center space-x-2">
           <div className="w-10 h-10 rounded-full bg-blue-500/20 flex items-center justify-center">
-            {/* <svg
+            <svg
               xmlns="http://www.w3.org/2000/svg"
               className="h-6 w-6 text-blue-200"
               fill="none"
@@ -43,7 +43,7 @@ export default function Home() {
                 strokeWidth={2}
                 d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"
               />
-            </svg> */}
+            </svg>
           </div>
           <h1 className="text-xl font-bold text-blue-100">Open World</h1>
         </div>

@@ -48,7 +48,7 @@ export default function ChatForm() {
               handleSend();
             }
           }}
-          placeholder="Type your cosmic message..."
+          placeholder="Type your wholesome message..."
           className="bg-transparent p-3 flex-1 text-blue-100 placeholder-blue-400/70 focus:outline-none"
           disabled={isSending}
         />

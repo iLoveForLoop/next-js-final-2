@@ -14,10 +14,8 @@ export default function Page() {
 
     setIsLoading(true);
 
-    // Generate session and navigate to home page
     generateSession(name);
 
-    // Small delay for UX
     setTimeout(() => {
       router.push("/");
     }, 600);
@@ -26,28 +24,6 @@ export default function Page() {
   return (
     <div className="min-h-screen bg-gradient-to-b from-blue-900 to-black flex items-center justify-center p-4">
       <div className="max-w-md w-full relative">
-        {/* Background decorative elements */}
-        <div className="absolute -z-10 top-20 -left-10 w-20 h-20 rounded-full bg-blue-500/10 blur-xl"></div>
-        <div className="absolute -z-10 bottom-10 -right-10 w-32 h-32 rounded-full bg-indigo-500/10 blur-xl"></div>
-        <div className="absolute -z-10 -top-10 right-20 w-16 h-16 rounded-full bg-blue-400/10 blur-xl"></div>
-
-        {/* Stars in background */}
-        <div className="fixed top-0 left-0 w-full h-full -z-20 overflow-hidden">
-          {Array.from({ length: 30 }).map((_, i) => (
-            <div
-              key={i}
-              className="absolute rounded-full bg-white"
-              style={{
-                top: `${Math.random() * 100}%`,
-                left: `${Math.random() * 100}%`,
-                width: `${Math.random() * 2 + 1}px`,
-                height: `${Math.random() * 2 + 1}px`,
-                opacity: Math.random() * 0.7 + 0.3,
-              }}
-            />
-          ))}
-        </div>
-
         {/* Login card */}
         <div className="bg-blue-900/30 backdrop-blur-md border border-blue-700/30 rounded-xl p-8 shadow-lg">
           <div className="flex justify-center mb-6">
@@ -70,10 +46,10 @@ export default function Page() {
           </div>
 
           <h1 className="text-2xl font-bold text-center text-blue-100 mb-2">
-            Welcome to Cosmic Chat
+            Welcome Open World
           </h1>
           <p className="text-blue-300 text-center mb-8">
-            Enter your space identity to continue
+            Enter your identity to continue
           </p>
 
           <form onSubmit={handleLogin}>
@@ -82,7 +58,7 @@ export default function Page() {
                 htmlFor="username"
                 className="block text-blue-300 text-sm font-medium mb-2"
               >
-                Choose Your Space Identity
+                Choose Your Name
               </label>
               <div className="relative">
                 <input
@@ -92,7 +68,7 @@ export default function Page() {
                   value={name}
                   onChange={(e) => setName(e.target.value)}
                   className="w-full bg-blue-800/40 border border-blue-700/50 rounded-lg p-4 pl-11 text-blue-100 placeholder-blue-400/70 focus:outline-none focus:ring-2 focus:ring-blue-500/50"
-                  placeholder="SpaceExplorer"
+                  placeholder="Username"
                 />
                 <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
                   <svg
@@ -148,7 +124,7 @@ export default function Page() {
                 </>
               ) : (
                 <>
-                  <span className="mr-2">Enter the Cosmos</span>
+                  <span className="mr-2">Enter world</span>
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     className="h-5 w-5"
@@ -168,13 +144,13 @@ export default function Page() {
             </button>
           </form>
 
-          <div className="mt-8 flex justify-center">
+          {/* <div className="mt-8 flex justify-center">
             <div className="flex space-x-3">
               <div className="w-2 h-2 rounded-full bg-blue-400/30"></div>
               <div className="w-2 h-2 rounded-full bg-blue-400/60"></div>
               <div className="w-2 h-2 rounded-full bg-blue-400/90"></div>
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
     </div>
