@@ -24,7 +24,6 @@ export default function Page() {
   return (
     <div className="min-h-screen bg-gradient-to-b from-blue-900 to-black flex items-center justify-center p-4">
       <div className="max-w-md w-full relative">
-        {/* Login card */}
         <div className="bg-blue-900/30 backdrop-blur-md border border-blue-700/30 rounded-xl p-8 shadow-lg">
           <div className="flex justify-center mb-6">
             <div className="w-20 h-20 rounded-full bg-blue-500/20 flex items-center justify-center">
@@ -46,7 +45,7 @@ export default function Page() {
           </div>
 
           <h1 className="text-2xl font-bold text-center text-blue-100 mb-2">
-            Welcome Open World
+            Welcome to Open World
           </h1>
           <p className="text-blue-300 text-center mb-8">
             Enter your identity to continue
@@ -120,7 +119,7 @@ export default function Page() {
                       d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"
                     ></path>
                   </svg>
-                  Launching...
+                  Joining
                 </>
               ) : (
                 <>
@@ -143,14 +142,6 @@ export default function Page() {
               )}
             </button>
           </form>
-
-          {/* <div className="mt-8 flex justify-center">
-            <div className="flex space-x-3">
-              <div className="w-2 h-2 rounded-full bg-blue-400/30"></div>
-              <div className="w-2 h-2 rounded-full bg-blue-400/60"></div>
-              <div className="w-2 h-2 rounded-full bg-blue-400/90"></div>
-            </div>
-          </div> */}
         </div>
       </div>
     </div>

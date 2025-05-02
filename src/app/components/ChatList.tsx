@@ -119,7 +119,7 @@ export default function ChatList() {
             />
           </svg>
           <p className="text-lg">No messages yet</p>
-          <p className="text-sm">Start the cosmic conversation!</p>
+          <p className="text-sm">Start the open world conversation!</p>
         </div>
       ) : (
         messages.map((msg) => (
