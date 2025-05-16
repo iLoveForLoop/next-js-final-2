@@ -73,7 +73,9 @@ export default function ChatList() {
   }
 
   const handleDelete = async (id: string) => {
-    await deleteDoc(doc(db, "messages", id));
+    if (confirm("Are you sure do you want to delete this message"))
+      await deleteDoc(doc(db, "messages", id));
+    return;
   };
 
   const startEdit = (id: string, currentText: string) => {

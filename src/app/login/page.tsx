@@ -10,6 +10,7 @@ export default function Page() {
 
   const handleLogin = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
+
     if (!name.trim()) return;
 
     setIsLoading(true);
