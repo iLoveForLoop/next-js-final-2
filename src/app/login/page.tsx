@@ -45,7 +45,7 @@ export default function Page() {
           </div>
 
           <h1 className="text-2xl font-bold text-center text-blue-100 mb-2">
-            Welcome to Open World
+            Welcome to Open Chat
           </h1>
           <p className="text-blue-300 text-center mb-8">
             Enter your identity to continue
@@ -123,7 +123,7 @@ export default function Page() {
                 </>
               ) : (
                 <>
-                  <span className="mr-2">Enter world</span>
+                  <span className="mr-2">Enter chat</span>
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     className="h-5 w-5"
